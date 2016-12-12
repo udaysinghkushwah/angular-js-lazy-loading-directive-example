@@ -1,0 +1,19 @@
+<style>
+        
+        .container {display: block; overflow: auto; height: 880px; border-collapse: collapse;}
+    </style>
+
+
+  
+<div class="container" when-scroll-ends="init()">
+  <div class="row">
+    <div class="col-md-4 album_details" ng-repeat="(key, value) in  songList">
+     <div>
+        <img ng-src="{{value.m}}"  class="img-thumbnail detail_img" alt="Cinque Terre">
+        <p>{{value.title}}</p>
+     </div>
+    </div>
+  </div>
+</div>
+
+
